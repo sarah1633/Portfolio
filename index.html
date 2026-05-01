@@ -1,0 +1,509 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sarah Alsebae — Portfolio</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- ══════════════════════════════════════
+       NAVIGATION
+  ══════════════════════════════════════ -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-inner">
+        <a href="#home" class="nav-logo">SA<span class="dot">.</span></a>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact" class="nav-cta">Let's Talk</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Nav Drawer -->
+    <div class="mobile-nav" id="mobileNav">
+      <button class="close-btn" id="closeNav" aria-label="Close menu">✕</button>
+      <ul>
+        <li><a href="#about" class="mobile-link">About</a></li>
+        <li><a href="#skills" class="mobile-link">Skills</a></li>
+        <li><a href="#projects" class="mobile-link">Projects</a></li>
+        <li><a href="#contact" class="mobile-link">Contact</a></li>
+      </ul>
+    </div>
+    <div class="overlay" id="overlay"></div>
+
+    <!-- ══════════════════════════════════════
+       HERO
+  ══════════════════════════════════════ -->
+    <section id="home" class="hero">
+      <div class="hero-bg-text" aria-hidden="true">CS</div>
+
+      <div class="hero-inner">
+        <div class="hero-label">
+          <span class="label-dot"></span>
+          Available for opportunities
+        </div>
+
+        <h1 class="hero-heading">
+          Hi, I'm<br />
+          <em>Sarah Alsebae</em>
+        </h1>
+
+        <p class="hero-sub">
+          Computer Science student at Effat University —<br />
+          building thoughtful, functional software.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-filled">View My Work</a>
+          <a href="#contact" class="btn btn-ghost">Contact Me</a>
+        </div>
+
+        <div class="hero-scroll" aria-hidden="true">
+          <span>Scroll</span>
+          <div class="scroll-line"></div>
+        </div>
+      </div>
+
+      <div class="hero-side">
+        <div class="profile-frame">
+          <img src="images/your-photo.jpg" />
+          <div class="profile-placeholder"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+       ABOUT
+  ══════════════════════════════════════ -->
+    <section id="about" class="about section-pad">
+      <div class="container">
+        <div class="section-tag">About Me</div>
+        <div class="about-grid">
+          <div class="about-text">
+            <h2 class="section-heading">
+              Turning curiosity<br /><em>into code.</em>
+            </h2>
+            <p>
+              I'm a Computer Science student at Effat University, currently in
+              my Junior year. My interest lies in web development, software
+              engineering, and building applications that are both functional
+              and user-friendly.
+            </p>
+            <p>
+              My journey in tech started with a simple question:
+              <em>how does this work?</em>
+              That curiosity turned into hands-on projects, late-night debugging
+              sessions, and a growing set of skills across multiple domains of
+              computer science.
+            </p>
+
+            <div class="about-meta">
+              <div class="meta-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Jeddah, Saudi Arabia</span>
+              </div>
+              <div class="meta-item">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Effat University · BSc Computer Science</span>
+              </div>
+              <div class="meta-item">
+                <i class="fas fa-calendar-alt"></i>
+                <span>Expected Graduation: <mark>Spring 2027</mark></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-stats">
+            <div class="stat-card">
+              <span class="stat-number">10+</span>
+              <span class="stat-label">Projects Completed</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">6+</span>
+              <span class="stat-label">Technologies Used</span>
+            </div>
+            <div class="stat-card stat-card--accent">
+              <span class="stat-number">3.99</span>
+              <span class="stat-label">GPA </span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">20+</span>
+              <span class="stat-label">Certificates Earned</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+       SKILLS
+  ══════════════════════════════════════ -->
+    <section id="skills" class="skills section-pad section-alt">
+      <div class="container">
+        <div class="section-tag">Skills</div>
+        <h2 class="section-heading centered">What I work with</h2>
+
+        <div class="skills-grid">
+          <div class="skill-block">
+            <div class="skill-block__icon"><i class="fas fa-code"></i></div>
+            <h3>Programming Languages</h3>
+            <div class="tag-group">
+              <span class="tag">Python</span>
+              <span class="tag">Java</span>
+              <span class="tag">C++</span>
+              <span class="tag">SQL</span>
+            </div>
+          </div>
+
+          <div class="skill-block">
+            <div class="skill-block__icon">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+            <h3>Web Development</h3>
+            <div class="tag-group">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">PHP</span>
+            </div>
+          </div>
+
+          <div class="skill-block">
+            <div class="skill-block__icon"><i class="fas fa-brain"></i></div>
+            <h3>AI & Data</h3>
+            <div class="tag-group">
+              <span class="tag">Scikit-Learn</span>
+              <span class="tag">Machine Learning</span>
+              <span class="tag">CNN</span>
+            </div>
+          </div>
+
+          <div class="skill-block">
+            <div class="skill-block__icon"><i class="fas fa-tools"></i></div>
+            <h3>Tools & Platforms</h3>
+            <div class="tag-group">
+              <span class="tag">Git & GitHub</span>
+              <span class="tag">Cisco Packet Tracer</span>
+              <span class="tag">Bootstrap</span>
+              <span class="tag">VS Code</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+       PROJECTS
+  ══════════════════════════════════════ -->
+    <section id="projects" class="projects section-pad">
+      <div class="container">
+        <div class="section-tag">Projects</div>
+        <h2 class="section-heading">Things I've built</h2>
+
+        <div class="projects-grid">
+          <!-- PROJECT 1 -->
+          <article class="project-card" data-index="01">
+            <div class="project-card__image">
+              <img
+                src="images/DSA.jpg"
+                alt="Hospital Patient Record Management System"
+                loading="lazy"
+              />
+              <div class="project-card__overlay">
+                <div class="project-links">
+                  <a
+                    href="https://github.com/sarah1633/Hospital-Patient-Record-Management-System"
+                    target="_blank"
+                    rel="noopener"
+                    class="icon-link"
+                    title="View Code"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a
+                    href="https://sites.google.com/view/hms-portfolio-cs2011-project/home"
+                    target="_blank"
+                    rel="noopener"
+                    class="icon-link"
+                    title="View Portfolio"
+                  >
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__meta">
+                <span class="project-category">Data Structures · C++</span>
+                <span class="project-number" aria-hidden="true">01</span>
+              </div>
+              <h3>Hospital Patient Record Management System</h3>
+              <p>
+                A C++ application that manages hospital patient records,
+                treatment flows, and emergency prioritization using multiple
+                data structures — Linked Lists, Stacks, Queues, and Priority
+                Queues — to simulate real-world hospital operations.
+              </p>
+              <div class="tag-group">
+                <span class="tag tag--sm">C++</span>
+                <span class="tag tag--sm">Data Structures</span>
+                <span class="tag tag--sm">Priority Queue</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-index="02">
+            <div class="project-card__image">
+              <img
+                src="images/ML.jpg"
+                alt="Machine Learning Project - Predictive Modeling"
+                loading="lazy"
+              />
+              <div class="project-card__overlay">
+                <div class="project-links">
+                  <a
+                    href="https://github.com/najeyahwaseem05/CS4082_Machine_Learning_Project.git"
+                    target="_blank"
+                    rel="noopener"
+                    class="icon-link"
+                    title="View Repository"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a
+                    href="https://nafeesa-mahek.github.io/MLprojecct--Website--portfolio/"
+                    target="_blank"
+                    rel="noopener"
+                    class="icon-link"
+                    title="Live Portfolio"
+                  >
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__meta">
+                <span class="project-category"
+                  >Machine Learning · Predictive Modeling</span
+                >
+                <span class="project-number" aria-hidden="true">02</span>
+              </div>
+              <h3>End-to-End ML Research & Development</h3>
+              <p>
+                A comprehensive ML lifecycle project featuring literature
+                review, EDA, and comparative modeling. Evaluated Logistic
+                Regression, Decision Trees, and KNN, optimizing performance
+                through hyperparameter tuning and SHAP interpretability.
+              </p>
+              <div class="tag-group">
+                <span class="tag tag--sm">Python</span>
+                <span class="tag tag--sm">Jupyter</span>
+                <span class="tag tag--sm">Scikit-Learn</span>
+                <span class="tag tag--sm">SHAP</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 3 -->
+          <article class="project-card" data-index="03">
+            <div class="project-card__image">
+              <img
+                src="images/CN.jpg"
+                alt="Enterprise Network Design Simulation"
+                loading="lazy"
+              />
+              <div class="project-card__overlay">
+                <div class="project-links">
+                  <a
+                    href="https://github.com/sarah1633/CS2091-Computer-Networks-Project.git"
+                    target="_blank"
+                    rel="noopener"
+                    class="icon-link"
+                    title="View Repository"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__meta">
+                <span class="project-category">Networking · Simulation</span>
+                <span class="project-number" aria-hidden="true">03</span>
+              </div>
+              <h3>Enterprise Network Design Simulation</h3>
+              <p>
+                Designed and simulated a scalable hybrid network (Star + Full
+                Mesh WAN) for a three-branch tech company in Cisco Packet
+                Tracer, with centralized DNS, DHCP, and dynamic inter-office
+                routing via RIP.
+              </p>
+              <div class="tag-group">
+                <span class="tag tag--sm">Cisco Packet Tracer</span>
+                <span class="tag tag--sm">RIP Routing</span>
+                <span class="tag tag--sm">LAN/WAN</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 4 -->
+          <article class="project-card" data-index="04">
+            <div class="project-card__image">
+              <img
+                src="images/WAD.jpg"
+                alt="Full-Stack Recipe Sharing Platform"
+                loading="lazy"
+              />
+              <div class="project-card__overlay">
+                <div class="project-links">
+                  <a
+                    href="https://github.com/sarah1633/CS2111-Web-Application-Development-Project.git"
+                    target="_blank"
+                    rel="noopener"
+                    class="icon-link"
+                    title="View Repository"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__meta">
+                <span class="project-category">Full-Stack · Web App</span>
+                <span class="project-number" aria-hidden="true">04</span>
+              </div>
+              <h3>Full-Stack Recipe Sharing Platform</h3>
+              <p>
+                A dynamic web app where food enthusiasts discover, submit, and
+                favorite recipes. Features secure authentication, tag-based
+                filtering, personalized profiles, and an admin dashboard with
+                role-based access control.
+              </p>
+              <div class="tag-group">
+                <span class="tag tag--sm">PHP</span>
+                <span class="tag tag--sm">HTML/CSS</span>
+                <span class="tag tag--sm">Bootstrap</span>
+                <span class="tag tag--sm">MySQL</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+       CONTACT
+  ══════════════════════════════════════ -->
+    <section id="contact" class="contact section-pad section-alt">
+      <div class="container">
+        <div class="section-tag">Contact</div>
+        <div class="contact-inner">
+          <div class="contact-text">
+            <h2 class="section-heading">Let's work<br /><em>together.</em></h2>
+            <p>
+              I'm currently open to internships, part-time roles, and
+              collaborative projects. Whether you have an opportunity, a project
+              idea, or just want to connect — my inbox is always open.
+            </p>
+          </div>
+
+          <div class="contact-links">
+            <a href="mailto:sarahsebai.ss96@gmail.com" class="contact-card">
+              <div class="contact-card__icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div>
+                <span class="contact-card__label">Email</span>
+                <span class="contact-card__value"
+                  >sarahsebai.ss96@gmail.com</span
+                >
+              </div>
+              <i class="fas fa-arrow-right contact-card__arrow"></i>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/sarah-a-740294294/"
+              target="_blank"
+              rel="noopener"
+              class="contact-card"
+            >
+              <div class="contact-card__icon">
+                <i class="fab fa-linkedin-in"></i>
+              </div>
+              <div>
+                <span class="contact-card__label">LinkedIn</span>
+                <span class="contact-card__value"
+                  >linkedin.com/in/sarah-a-740294294</span
+                >
+              </div>
+              <i class="fas fa-arrow-right contact-card__arrow"></i>
+            </a>
+
+            <a
+              href="https://github.com/sarah1633"
+              target="_blank"
+              rel="noopener"
+              class="contact-card"
+            >
+              <div class="contact-card__icon">
+                <i class="fab fa-github"></i>
+              </div>
+              <div>
+                <span class="contact-card__label">GitHub</span>
+                <span class="contact-card__value">github.com/sarah1633</span>
+              </div>
+              <i class="fas fa-arrow-right contact-card__arrow"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════ -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <span class="footer-logo">SA<span class="dot">.</span></span>
+        <p class="footer-copy">© 2026 Sarah Alsebae. Crafted with care.</p>
+        <div class="footer-socials">
+          <a
+            href="https://github.com/sarah1633"
+            target="_blank"
+            rel="noopener"
+            aria-label="GitHub"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/sarah-a-740294294/"
+            target="_blank"
+            rel="noopener"
+            aria-label="LinkedIn"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a href="mailto:sarahsebai.ss96@gmail.com" aria-label="Email"
+            ><i class="fas fa-envelope"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
